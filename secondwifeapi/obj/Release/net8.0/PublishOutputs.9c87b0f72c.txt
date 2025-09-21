@@ -1,0 +1,11 @@
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\secondwifeapi.exe
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\secondwifeapi.dll
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\secondwifeapi.deps.json
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\secondwifeapi.runtimeconfig.json
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\secondwifeapi.pdb
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\work\AdMad\Admad-octavarium\private\src\secondwifeapi\secondwifeapi\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

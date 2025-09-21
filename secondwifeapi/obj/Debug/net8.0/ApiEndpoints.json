@@ -1,0 +1,452 @@
+[
+  {
+    "ContainingType": "secondwifeapi.Controllers.AnalyticsController",
+    "Method": "GetGroupExpenseDetails",
+    "RelativePath": "api/Analytics/group-details/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "secondwifeapi.Models.GroupExpenseDetailsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.AnalyticsController",
+    "Method": "GetGroupSummary",
+    "RelativePath": "api/Analytics/group-summary/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "secondwifeapi.Models.GroupSummaryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.AnalyticsController",
+    "Method": "GetUserExpensesInGroup",
+    "RelativePath": "api/Analytics/group/{groupId}/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[secondwifeapi.Models.ExpenseDetail, secondwifeapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.AnalyticsController",
+    "Method": "GetUserExpenseSummary",
+    "RelativePath": "api/Analytics/user-summary/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "secondwifeapi.Models.UserExpenseSummaryResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.GroupController",
+    "Method": "AddUserToGroup",
+    "RelativePath": "api/Group/add-user-to-group",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.AddUserToGroupRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.GroupController",
+    "Method": "CreateGroup",
+    "RelativePath": "api/Group/create-group",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.CreateGroupRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.GroupController",
+    "Method": "GetUserGroups",
+    "RelativePath": "api/Group/get-groups/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.InvoiceController",
+    "Method": "GenerateSasUri",
+    "RelativePath": "api/Invoice/generate-sas-uri",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.InvoiceUploadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.InvoiceController",
+    "Method": "CreateManualExpense",
+    "RelativePath": "api/Invoice/manual-expense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.ManualExpenseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.InvoiceController",
+    "Method": "SaveExpense",
+    "RelativePath": "api/Invoice/save-expense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.SaveExpenseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.InvoiceController",
+    "Method": "CreateVoiceExpense",
+    "RelativePath": "api/Invoice/voice-expense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.VoiceExpenseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.InvoiceController",
+    "Method": "WebhookCallback",
+    "RelativePath": "api/Invoice/webhook-callback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.WebhookCallbackRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.TestController",
+    "Method": "TestQueue",
+    "RelativePath": "api/Test/test-queue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserAuthenticationController",
+    "Method": "CheckUsernameExists",
+    "RelativePath": "api/UserAuthentication/check-username",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.CheckUsernameRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserAuthenticationController",
+    "Method": "SignIn",
+    "RelativePath": "api/UserAuthentication/sign-in",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.SignInRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserAuthenticationController",
+    "Method": "SignUp",
+    "RelativePath": "api/UserAuthentication/sign-up",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.SignUpRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserContextController",
+    "Method": "GetUserContext",
+    "RelativePath": "api/UserContext/context/{contextId}/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contextId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "secondwifeapi.Models.UserContext",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserContextController",
+    "Method": "DeleteUserContext",
+    "RelativePath": "api/UserContext/context/{contextId}/user/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contextId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserContextController",
+    "Method": "ProcessUserContext",
+    "RelativePath": "api/UserContext/process-context",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "secondwifeapi.Models.UserContextRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "secondwifeapi.Models.UserContextResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserContextController",
+    "Method": "GetUserContexts",
+    "RelativePath": "api/UserContext/user/{userId}/contexts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[secondwifeapi.Models.UserContext, secondwifeapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "secondwifeapi.Controllers.UserContextController",
+    "Method": "SearchUserContexts",
+    "RelativePath": "api/UserContext/user/{userId}/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tag",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[secondwifeapi.Models.UserContext, secondwifeapi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
